@@ -1,0 +1,126 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: #111;
+    
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.navbar h2
+{
+    color: cornsilk;
+    padding: 15px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+.navbar .toggle
+{
+    padding: 5px;
+}
+.badabox
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 100px;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.badabox video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+.badabox::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    background-color: rgba(0,0,0, 0.5);
+    
+}
+.badabox .text
+{
+    width: 400px;
+    position: relative;
+    padding: 0px 20px ;
+    z-index: 2;
+}
+.badabox .text h1
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: whitesmoke;
+}
+.badabox .text h3
+{
+    color: whitesmoke;
+    padding: 30px 0px;
+    font-family: system-ui;
+
+}
+.badabox .text a
+{
+    text-decoration: none;
+    background-color: whitesmoke;
+    border: 2px solid whitesmoke;
+    color: #111;
+    border-radius: 7px;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.badabox .video
+{
+    position: relative;
+    background-color: whitesmoke;
+    margin-left: 40px;
+    height: 300px;
+    width: 400px;
+}
+.badabox .video video
+{
+    opacity: 1;
+}
+.badabox .media
+{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 50px;
+}
+.badabox .media a
+{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 30px;
+    margin-left: 40px;
+    padding: 10px;
+
+}
